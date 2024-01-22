@@ -1,0 +1,29 @@
+.container {
+    background: linear-gradient(rgb(197, 249, 197),rgb(255, 255, 108));
+    border: 2px solid black;
+    width: 1400px;
+    height: 700px;
+    margin: auto;
+    border-radius: 30px;
+}
+
+.atas {
+    text-align:center;
+    padding-top: 5px;
+    width: 20%; 
+}
+
+.marshall {
+    width: 200px;
+    margin: 20px;
+    border: 2px solid black;
+    box-shadow: 2px 2px 2px black;
+}
+
+.marshall2 {
+    border: 2px solid black;
+    box-shadow: 2px 2px 2px black;
+    width: 210px;
+    height: 233px;
+    margin: 20px;
+}

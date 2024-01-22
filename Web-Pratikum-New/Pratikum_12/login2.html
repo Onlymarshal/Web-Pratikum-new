@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+<div class="form-style-3">
+<form id="form">
+<fieldset>
+    <legend>Login</legend>
+      <label for="field1"><span>Userame <span class="required">*</span></span><input type="text" class="input-field" name="field1" value="" id="username"/></label>
+      <label for="field4"><span>Password  <span class="required">*</span></span><input type="password" class="input-field" name="field4" value="" id="password"/></label>
+      <button type="submit" id="login" style="background-color: rgb(250, 218, 224); border-color: plum; margin-left: 170px; border-radius: 10px;">Login</button>
+    </form>
+</fieldset>
+</div>
+</div>
+
+<script>
+    let buttonLogin = document.getElementById('login');
+
+    buttonLogin.onclick = function(){
+        let inputnama =  document.getElementById('username').value;
+        let inputpass = document.getElementById('password').value;
+        let form = document.getElementById('form');
+
+        if(inputnama=='admin' && inputpass =='admin'){
+            alert('Login Berhasil');
+            form.setAttribute('action', 'dashboard.html');
+        } else {
+            alert('LOGIN TELAH GAGAL');
+        }
+    }
+</script>
+
+</body>
+</html>
